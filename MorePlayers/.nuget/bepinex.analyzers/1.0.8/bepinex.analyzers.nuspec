@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>BepInEx.Analyzers</id>
+    <version>1.0.8</version>
+    <authors>BepInEx</authors>
+    <developmentDependency>true</developmentDependency>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/BepInEx/BepInEx.Analyzers</projectUrl>
+    <iconUrl>https://avatars2.githubusercontent.com/u/39589027</iconUrl>
+    <description>Roslyn analyzers for BepInEx plugin developers</description>
+    <copyright>Copyright</copyright>
+    <tags>BepInEx.Analyzers, BepInEx, analyzers</tags>
+    <repository url="https://github.com/BepInEx/BepInEx.Analyzers" />
+  </metadata>
+</package>

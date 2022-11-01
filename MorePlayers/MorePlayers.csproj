@@ -1,0 +1,128 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+<PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <DebugType>full</DebugType>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.Core" Version="5.*" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
+    <PackageReference Include="NuGet.CommandLine" Version="6.3.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="SixLabors.ImageSharp" Version="2.1.3" />
+    <PackageReference Include="UnityEngine.Modules" Version="2020.3.34" IncludeAssets="compile" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Controllers">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Controllers.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Steamworks.Win64">
+      <HintPath>..\..\Steamworks\Facepunch.Steamworks.Win64.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.Common">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Kitchen.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.FranchiseBuilderMode">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Kitchen.FranchiseBuilderMode.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.FranchiseMode">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Kitchen.FranchiseMode.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.GameData">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Kitchen.GameData.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.Layouts">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Kitchen.Layouts.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.Networking">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Kitchen.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.Persistence">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Kitchen.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.PostgameMode">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Kitchen.PostgameMode.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.ResearchMode">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Kitchen.ResearchMode.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.RestaurantMode">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Kitchen.RestaurantMode.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.TutorialMode">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Kitchen.TutorialMode.dll</HintPath>
+    </Reference>
+    <Reference Include="KitchenMode">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\KitchenMode.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Unity.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities.Hybrid">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Unity.Entities.Hybrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="XNode">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\XNode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <PluginDir>G:\Steam\steamapps\common\PlateUp\PlateUp\BepInEx\plugins\</PluginDir>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>$(DefineConstants)TRACE;STEAMWORKS_WIN</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>$(DefineConstants)TRACE;STEAMWORKS_WIN</DefineConstants>
+  </PropertyGroup>
+  <Target Name="PostBuild" BeforeTargets="PostBuildEvent">
+    <Exec Command="copy /Y &quot;$(TargetDir)$(ProjectName).dll&quot; &quot;$(PluginDir)$(ProjectName).dll&quot;" />
+    <Exec Command="copy /Y &quot;$(TargetDir)$(ProjectName).pdb&quot; &quot;$(PluginDir)$(ProjectName).pdb&quot;" />
+    <Exec Command="$(SolutionDir)tools\pdb2mdb.exe $(PluginDir)$(ProjectName).dll" />
+  </Target>
+
+</Project>

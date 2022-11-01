@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>HarmonyX</id>
+    <version>2.7.0</version>
+    <authors>Andreas Pardeike, Geoffrey Horsington, ManlyMarco et al.</authors>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>logo_mini.png</icon>
+    <projectUrl>https://github.com/BepInEx/HarmonyX</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/BepInEx/HarmonyX/master/logo_mini.png</iconUrl>
+    <description>A library for patching, replacing and decorating .NET and Mono methods during runtime powered by MonoMod.</description>
+    <copyright>Copyright © BepInEx 2021</copyright>
+    <tags>Harmony,Mono,Patch,Patching,Runtime,Detour,Detours,Aspect,Aspects</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework3.5">
+        <dependency id="MonoMod.RuntimeDetour" version="21.12.13.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="MonoMod.RuntimeDetour" version="21.12.13.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="MonoMod.RuntimeDetour" version="21.12.13.1" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.Emit" version="4.7.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

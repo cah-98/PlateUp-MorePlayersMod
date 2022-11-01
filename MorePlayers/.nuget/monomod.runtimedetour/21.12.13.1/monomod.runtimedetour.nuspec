@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>MonoMod.RuntimeDetour</id>
+    <version>21.12.13.1</version>
+    <authors>0x0ade</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/MonoMod</projectUrl>
+    <iconUrl>https://user-images.githubusercontent.com/1200380/47308180-28242880-d631-11e8-89d2-14d86f3db113.png</iconUrl>
+    <description>Flexible and easily extensible runtime detouring library. Wrap, replace and manipulate (Mono.Cecil) methods at runtime.</description>
+    <copyright>Copyright 2021 0x0ade</copyright>
+    <tags>MonoMod assembly assemblies module modules il cil msil bytecode reflection injection cecil mono RuntimeDetour detour detours</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework3.5">
+        <dependency id="MonoMod.Utils" version="21.12.13.1" exclude="Build,Analyzers" />
+        <dependency id="Mono.Cecil" version="0.10.4" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.5.2">
+        <dependency id="MonoMod.Utils" version="21.12.13.1" exclude="Build,Analyzers" />
+        <dependency id="Mono.Cecil" version="0.11.4" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net5.0">
+        <dependency id="MonoMod.Utils" version="21.12.13.1" exclude="Build,Analyzers" />
+        <dependency id="Mono.Cecil" version="0.11.4" exclude="Build,Analyzers" />
+        <dependency id="System.Collections.NonGeneric" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.ComponentModel.TypeConverter" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.IO.FileSystem.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.Emit.ILGeneration" version="4.7.0" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.Emit.Lightweight" version="4.7.0" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.TypeExtensions" version="4.7.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="MonoMod.Utils" version="21.12.13.1" exclude="Build,Analyzers" />
+        <dependency id="Mono.Cecil" version="0.11.4" exclude="Build,Analyzers" />
+        <dependency id="System.Collections.NonGeneric" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.ComponentModel.TypeConverter" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.IO.FileSystem.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.Emit.ILGeneration" version="4.7.0" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.Emit.Lightweight" version="4.7.0" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.TypeExtensions" version="4.7.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework3.5, .NETFramework4.5.2" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
