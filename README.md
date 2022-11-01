@@ -13,3 +13,5 @@ Instructions:
 9. Change the Max players to whatever you wish between 4 and theoretically 128 (Due to it being the max steam lobbies supports, however i have not tested it for that many players).
 10. Save the file.
 11. Start the game up and invite some friends! They also require the mod however!
+
+Extra note: Everyone has to join the lobby before anyone presses the buttons to create a character. Otherwise you will only be allowed four players. This is due to a small bug i haven't figured out yet.
