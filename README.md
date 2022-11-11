@@ -11,7 +11,8 @@ Instructions:
 7. Close the game.
 8. Go to plateup-folder/BepInEx/config and open MorePlayers.cfg with a text editor (eg. notepad).
 9. Change the Max players to whatever you wish between 4 and theoretically 128 (Due to it being the max steam lobbies supports, however i have not tested it for that many players).
-10. Save the file.
-11. Start the game up and invite some friends! They also require the mod however!
+10. Change the Player confirmation count to any value between 0 and 1 (eg 0.5 for 50% of players). This changes how many players need to ready up for things.
+11. Save the file.
+12. Start the game up and invite some friends! They also require the mod however!
 
 Extra note: Everyone has to join the lobby before anyone presses the buttons to create a character. Otherwise you will only be allowed four players. This is due to a small bug i haven't figured out yet.
