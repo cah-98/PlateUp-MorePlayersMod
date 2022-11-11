@@ -73,6 +73,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="ShapesRuntime">
+      <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\ShapesRuntime.dll</HintPath>
+    </Reference>
     <Reference Include="Sirenix.Serialization">
       <HintPath>G:\Steam\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Sirenix.Serialization.dll</HintPath>
     </Reference>
