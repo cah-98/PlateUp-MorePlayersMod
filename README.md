@@ -1,3 +1,4 @@
+# No longer maintained!
 # PlateUp-MorePlayersMod
 Mod that adds more players to PlateUp.
 
